@@ -12,7 +12,7 @@ const app = express();
 const httpServer = createServer(app);
 const io = new SocketIOServer(httpServer, {
   cors: {
-    origin: "https://chat-room-api-tau.vercel.app",
+    origin: "https://chat-app-gilt-mu.vercel.app",
     methods: ["GET", "POST"],
     credentials: true,
   },
@@ -21,7 +21,7 @@ const io = new SocketIOServer(httpServer, {
 app.use(express.json());
 app.use(
   cors({
-    origin: "https://chat-room-api-tau.vercel.app",
+    origin: "https://chat-app-gilt-mu.vercel.app",
     methods: ["GET", "POST"],
     credentials: true,
   })
