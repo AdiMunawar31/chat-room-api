@@ -14,7 +14,7 @@ const io = new SocketIOServer(httpServer, {
   cors: {
     origin: "https://chat-app-gilt-mu.vercel.app",
     methods: ["GET", "POST"],
-    credentials: true,
+    // credentials: true,
   },
 });
 
@@ -23,7 +23,7 @@ app.use(
   cors({
     origin: "https://chat-app-gilt-mu.vercel.app",
     methods: ["GET", "POST"],
-    credentials: true,
+    // credentials: true,
   })
 );
 
