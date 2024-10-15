@@ -30,6 +30,7 @@ app.use(
 handleSocketConnection(io);
 
 app.use("/api/chat", chatRoutes);
+app.get("/", (req, res) => res.send("Express on Vercel"));
 
 app.use((err, req, res, next) => {
   console.error(err.stack);
