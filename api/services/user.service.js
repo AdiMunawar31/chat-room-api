@@ -1,4 +1,4 @@
-const { User } = require("../models/user.model");
+const User = require("../models/user.model");
 
 const createOrUpdateUser = async (name, socketId) => {
   const existingUser = await User.findOne({ name });
